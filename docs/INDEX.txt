@@ -1,0 +1,53 @@
+MIT 6.824 Distributed Systems — Spring 2020
+Source: http://nil.csail.mit.edu/6.824/2020/
+(videos excluded; see schedule.html for YouTube links)
+
+Directory layout
+================
+lab-code/              Official lab skeleton + test harness (git://g.csail.mit.edu/6.824-golabs-2020)
+docs/
+  lectures/            Lecture notes (l01.txt .. l-*.txt)
+  papers/              Reading papers (PDF) and discussion FAQs (txt)
+  lab-instructions/    Lab writeups (HTML)
+  exams/               Past midterm/final exams and solutions (PDF/txt)
+  code-samples/        In-class Go examples (crawler.go, kv.go, go-concurrency.tar.gz)
+  website/             Course pages (schedule, general info, questions, project)
+
+Lecture schedule & readings
+===========================
+ LEC  1  Introduction              -> lectures/l01.txt          papers/mapreduce.pdf
+ LEC  2  RPC and Threads           -> lectures/l-rpc.txt        code-samples/crawler.go, kv.go
+ LEC  3  GFS                       -> lectures/l-gfs.txt        papers/gfs.pdf
+ LEC  4  Primary-Backup Replication-> lectures/l-vm-ft.txt      papers/vm-ft.pdf
+ LEC  5  Go, Threads, and Raft     -> lectures/l-go-concurrency papers/raft-extended.pdf (sec 1-5)
+ LEC  6  Fault Tolerance: Raft (1) -> lectures/l-raft.txt       papers/raft-extended.pdf (sec 1-5)
+ LEC  7  Fault Tolerance: Raft (2) -> lectures/l-raft2.txt      papers/raft-extended.pdf (sec 7-end)
+ LEC  8  Zookeeper                 -> lectures/l-zookeeper.txt  papers/zookeeper.pdf
+ LEC  9  More Replication, CRAQ    -> lectures/l-craq.txt       papers/craq.pdf
+ LEC 10  Cloud Replicated DB       -> lectures/l-aurora.txt     papers/aurora.pdf
+ LEC 11  Cache Consistency         -> lectures/l-frangipani.txt papers/thekkath-frangipani.pdf
+ LEC 12  Distributed Transactions  -> lectures/l-2pc.txt        papers/chapter9-faq.txt (6.033 Ch9)
+ LEC 13  Spanner                   -> lectures/l-spanner.txt    papers/spanner.pdf
+ LEC 14  Optimistic Concurrency    -> lectures/l-farm.txt       papers/farm-2015.pdf
+ LEC 15  Big Data: Spark           -> lectures/l-spark.txt      papers/zaharia-spark.pdf
+ LEC 16  Memcached at Facebook     -> lectures/l-memcached.txt  papers/memcache-fb.pdf
+ LEC 17  Causal Consistency, COPS  -> lectures/l-cops.txt       papers/cops.pdf
+ LEC 18  Certificate Transparency  -> lectures/l-ct.txt         papers/ct-faq.txt (+ external links)
+ LEC 19  Bitcoin                   -> lectures/l-bitcoin.txt     papers/bitcoin.pdf
+ LEC 20  Blockstack                -> lectures/l-blockstack.txt papers/blockstack-2017.pdf
+ LEC 21  Project demos             -> papers/katabi-analogicfs.pdf
+
+Labs
+====
+ Lab 1  MapReduce       -> lab-instructions/lab-mr.html      lab-code/src/mr/
+ Lab 2  Raft            -> lab-instructions/lab-raft.html    lab-code/src/raft/
+ Lab 3  KV Raft         -> lab-instructions/lab-kvraft.html  lab-code/src/kvraft/
+ Lab 4  Sharded KV      -> lab-instructions/lab-shard.html   lab-code/src/shardkv/, shardmaster/
+
+Supplementary Raft notes: lectures/raft-locking.txt, lectures/raft-structure.txt
+
+External resources (not mirrored)
+=================================
+ Go tutorial:     http://tour.golang.org/
+ Go memory model: https://golang.org/ref/mem
+ Certificate Transparency: https://www.certificate-transparency.org/
